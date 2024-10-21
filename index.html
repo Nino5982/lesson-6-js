@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List with Popup</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  </head>
+  <body>
+    <section class="container-wrapper">
+      <div id="name-section">
+        <img src="./img/image.png" alt="to do list" />
+        <h1 class="name-section__title">
+          <span>welcome to your </span> to do list
+        </h1>
+        <input
+          type="text"
+          id="user-name"
+          placeholder="Enter your name"
+          class="input-style" />
+        <button id="start-btn" class="btn">
+          Get Start <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div id="to-do-list-container">
+        <!-- 1 -->
+        <div class="user-info container">
+          <div class="profile">
+            <img
+              src="./img/user.svg"
+              alt="User profile picture"
+              id="profile-pic" />
+            <span id="greeting"
+              >Hello <span id="user-display-name"> nino</span></span
+            >
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="container tasks-container">
+          <div class="tasks-header">
+            <h2>Create tasks</h2>
+            <div class="add-task">
+              <input
+                type="text"
+                id="task-input"
+                placeholder="Add a new task"
+                class="input-style" />
+
+              <button id="add-task-btn" class="task-btn">+</button>
+            </div>
+          </div>
+          <ul id="task-list">
+            
+          </ul>
+
+          <!-- Added buttons -->
+          <button id="clear-all-btn" class="btn">Clear All</button>
+          <button id="go-back-btn" class="btn" title="go-back-btn">
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
